@@ -47,5 +47,7 @@ if __name__ == '__main__':
     ).agg(agg_rule).reset_index()
 
     # Loading (Data Mart)
-    # TODO save the category and brand datas to excel
+    # save the category and brand datas to excel
+    df_product_by_brand.to_excel('temp/df_product_by_brand.xlsx', index=False)
+    df_product_by_category.to_excel('temp/df_product_by_category.xlsx', index=False)
 
